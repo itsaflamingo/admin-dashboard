@@ -4,7 +4,7 @@
     --user2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
     --user3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
     --user4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
-    --box-shadow: 2px 2px 2px 2px rgb(212, 209, 209);
+    --box-shadow: 2px 2px 2px 2px rgb(181, 170, 183);
     font-family: 'Roboto', sans-serif;
 }
 :root {
@@ -31,10 +31,11 @@ body {
 
     display: grid;
     grid-template-rows: 2;
-    box-shadow: 0px 5px 5px rgb(212 209 209);
+    box-shadow: var(--box-shadow);
     background-color: white;
     width: 80vw;
     height: 25vh;
+    z-index: 1;
 }
 ul {
     list-style-type: none;
@@ -273,6 +274,7 @@ li {
     display: grid;
     grid-template-rows: repeat(autofit, minmax(150px, 1fr));
     height: 60vh;
+    overflow: hidden;
 }
 .announce-legend {
     grid-column-start: 2;
